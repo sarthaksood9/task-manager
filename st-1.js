@@ -107,7 +107,10 @@ const ss=()=>{
 
 	for(i=0;i<tasksLen;i++){
 
-		if(searcValue!=document.getElementsByClassName("text")[i].value){
+		// if(searcValue!=document.getElementsByClassName("text")[i].value){
+		// 	document.getElementById("tasks").children[i].style.display="none"
+		// }
+		if(!document.getElementsByClassName("text")[i].value.toLowerCase().includes(searcValue)){
 			document.getElementById("tasks").children[i].style.display="none"
 		}
 	}
